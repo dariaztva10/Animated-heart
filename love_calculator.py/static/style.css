@@ -2,8 +2,12 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background: #ffcccc;
-    padding: 50px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .container {
     background: white;
@@ -11,6 +15,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: inline-block;
+    margin: 20px auto;
 }
 
 h1 {
@@ -37,4 +42,49 @@ button {
 
 button:hover {
     background: #ff1a1a;
+}
+
+.content {
+    flex: 1;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+.social-icon {
+    font-size: 2rem; 
+    margin: 0 7px ;  
+    color: #333;    
+    text-decoration: none; 
+    transition: transform 0.3s ease, color 0.3s ease;
+   
+}
+
+.social-icon:hover {
+    transform: scale(1.2); 
+    color: #0077b5; 
+}
+
+.social-icon i {
+    transition: color 0.3s ease; 
+}
+
+.social-icon:nth-child(1):hover i {
+    color: #333; 
+}
+
+.social-icon:nth-child(2):hover i {
+    color: #0077b5; 
+}
+
+.social-icon:nth-child(3):hover i {
+    color: #d93c3c; 
 }

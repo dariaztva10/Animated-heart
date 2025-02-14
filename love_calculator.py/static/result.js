@@ -23,4 +23,6 @@ function calcularAmor() {
     })
     .catch(error => console.error("Error:", error));
 }
-//try
+
+
+window.calcularAmor = calcularAmor;

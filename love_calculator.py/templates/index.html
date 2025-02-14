@@ -6,6 +6,7 @@
     <title>Feliz día del amor y la amistad©</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💘</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
@@ -16,7 +17,24 @@
         <button onclick="calcularAmor()">💘 Calcular</button>
         <div id="resultado"></div>
     </div>
-    <script src="{{ url_for('static', filename='result.js') }}"></script>
+    <script type="module" src="{{ url_for('static', filename='result.js') }}"></script>
 </body>
+<footer>
+    <p>© 2025 Hecho con mucho amor por Daria💘
+    <small>(No alcancé a comprar las flores)</small></p>
+    <div class="social-icons">
+        <a href="https://github.com/dariaztva10" class="social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dariadachazotova/" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:dariaztva@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+        
+    </div>
+</footer>
+
 
 </html>
